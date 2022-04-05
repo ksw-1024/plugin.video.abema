@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Abema-0.0.1" name="Abema Client" version="0.0.1" provider-name="KSW-1024">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.pil" version="1.1.7" />
+        <import addon="script.module.streamlink.base" version="2020.09.07.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+		<summary lang="en_GB">AbemaTV Client</summary>
+        <summary lang="ja_JP">AbemaTVクライアント</summary>
+		<description lang="en_GB">Watch AbemaTV video contents</description>
+        <description lang="ja_JP">AbemaTVのコンテンツを、Kodiで視聴します</description>
+        <disclaimer lang="en_GB">Tested on Linux Mint</disclaimer>
+        <disclaimer lang="ja_JP">Linux Mint内のKodiで動作を検証しています</disclaimer>
+		<website>ksw1024.com</website>
+	</extension>
+</addon>
