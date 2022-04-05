@@ -3,7 +3,6 @@
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7" />
-        <import addon="script.module.streamlink.base" version="2020.09.07.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>video</provides>
