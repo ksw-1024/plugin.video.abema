@@ -8,6 +8,6 @@ addon_handle = int(sys.argv[1])
 
 xbmcplugin.setContent(addon_handle, 'movies')
 
-url = "rtsp://127.0.0.1:8554"
+url = "rtsp://127.0.0.1:8553"
 
 xbmc.Player().play(url)
