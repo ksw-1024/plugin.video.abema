@@ -3,9 +3,7 @@ import xbmc
 import xbmcgui
 import xbmcplugin
 from resources import streamlink
-# import vlc
 import socket
-import time
 
 addon_handle = int(sys.argv[1])
 
@@ -14,10 +12,6 @@ addon_name = 'AbemaTV Player'
 
 #リンクの設定
 abema_news = "rtsp://127.0.0.1:8553"
-
-#VLCの設定
-# player = vlc.MediaPlayer()
-# player.set_mrl(abema_news)
 
 #TCPポートテスト
 host = '127.0.0.1'
@@ -35,6 +29,3 @@ else:
     print("Host: {}, Port: {} - False".format(host, port))
     xbmcgui.Dialog().ok(addon_name, 'Streamlink is not running on a local machine.')
     already_play = False
-    
-# xbmcgui.Dialog().ok(addon_name, 'Finish.')
-# xbmc.executebuiltin("Dialog.Close(all)")

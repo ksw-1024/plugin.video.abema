@@ -2,7 +2,6 @@ from resources import streamlink
 import vlc
 import socket
 import time
-import rtsp
 
 #リンクの設定
 abema_news = "rtsp://127.0.0.1:8553"
@@ -22,8 +21,6 @@ count = 0
 
 #RTSPの設定
 RTSP_URL = f"rtsp://127.0.0.1:8553"
-client = rtsp.Client(rtsp_server_uri=RTSP_URL, verbose=True)
-# client.read()
 
 while loop == True:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
